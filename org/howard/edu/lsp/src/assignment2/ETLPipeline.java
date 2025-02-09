@@ -10,7 +10,7 @@
 //https://www.javacodegeeks.com/2024/09/data-pipeline-vs-etl-pipeline-key-differences-and-use-cases.html
 
 
-package org.howard.edu.lsp.assignment2.src;
+package org.howard.edu.lsp.src.assignment2;
 
 import java.io.*;
 import java.util.*;
@@ -18,8 +18,8 @@ import java.util.*;
 //ETL pipe
 public class ETLPipeline {
     public static void main(String[] args) {
-        String inputFile = "org/howard/edu/lsp/assignment2/data/products.csv";
-        String outputFile = "org/howard/edu/lsp/assignment2/data/transformed_products.csv";
+        String inputFile = "org/howard/edu/lsp/src/assignment2/data/products.csv";
+        String outputFile = "org/howard/edu/lsp/src/assignment2/data/transformed_products.csv";
 
         try {
             //chek to see if it exists
