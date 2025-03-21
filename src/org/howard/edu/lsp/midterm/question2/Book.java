@@ -92,7 +92,8 @@ public class Book {
      * Compares with another book.
      * Two books are are the same if ISBN and author are the same
      * @param obj The object to compare to.
-     * @return true if the books are equal, false otherwise.
+     * @return true if the books are equal, false otherwise
+     * Reference: https://stackoverflow.com/questions/6364258/override-equals-method
      */
     @Override
     public boolean equals(Object obj) {
@@ -105,6 +106,7 @@ public class Book {
     /**
      * String representation of the book.
      * @return A formatted string containing book details.
+     * Reference: https://stackoverflow.com/questions/20667838/add-multiple-values-of-a-book-to-an-arraylist-in-java
      */
     @Override
     public String toString() {

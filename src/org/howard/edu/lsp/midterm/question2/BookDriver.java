@@ -1,7 +1,7 @@
 package org.howard.edu.lsp.midterm.question2;
 
 /**
- * Driver class to test the Book class.
+ * Driver class to test the Book class
  */
 class BookDriver {
     public static void main(String[] args) {
@@ -11,10 +11,10 @@ class BookDriver {
         Book book3 = new Book("A Promised Land", "Barack Obama", "9780593239681", 2020);
 
         // Testing equality
-        System.out.println(book1.equals(book2)); // true
-        System.out.println(book1.equals(book3)); // false
+        System.out.println(book1.equals(book2)); 
+        System.out.println(book1.equals(book3)); 
         
         // Displaying book details
-        System.out.println(book1); // Output: Title: The Great Gatsby, Author: F. Scott Fitzgerald, ISBN: 123456789, Year Published: 1925
+        System.out.println(book1); // Output: Title: Author: ISBN: Year Published: 
     }
 }

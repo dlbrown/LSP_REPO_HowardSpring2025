@@ -12,7 +12,7 @@ public class VotingMachineTest {
         vm.addCandidate("Bob");
         vm.addCandidate("Charlie");
 
-        // Casting votes
+        // Casting votes.
         vm.castVote("Alice");
         vm.castVote("Alice");
         vm.castVote("Bob");
