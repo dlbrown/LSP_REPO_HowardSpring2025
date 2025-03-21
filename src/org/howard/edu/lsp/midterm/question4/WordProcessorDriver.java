@@ -1,43 +1,28 @@
+/**
+ * Driver class to test the WordProcessor class.
+ */
 package org.howard.edu.lsp.midterm.question4;
 
-import java.util.*;
+public class WordProcessorDriver {
+    public static void main(String[] args) {
+        // Test case 1: Sentence with single longest word
+        WordProcessor wp4 = new WordProcessor("This is a test with amazing results, amazing achievements!");
+        System.out.println("Test 4 - Longest words: " + wp4.findLongestWords());  
+        // Expected Output: ["achievements"]
 
-/**
- * A class that processes a sentence and returns all longest words.
- */
-public class WordProcessor {
-    private String sentence;
+        // Test case 2: Sentence with multiple occurrences of the same longest word and length
+        WordProcessor wp2 = new WordProcessor("Java is a powerful  tool!");
+        System.out.println("Test 2 - Longest words: " + wp2.findLongestWords());  
+        // Expected Output: ["powerful", "powerful"]
 
-    /**
-     * Constructs a WordProcessor with a given sentence.
-     * @param sentence The input sentence to be processed.
-     */
-    public WordProcessor(String sentence) {
-        this.sentence = sentence;
-    }
+        // Test case 5: Sentence with single character words
+        WordProcessor wp5 = new WordProcessor("A B C D E");
+        System.out.println("Test 5 - Longest words: " + wp5.findLongestWords());  
+        // Expected Output: ["A", "B", "C", "D", "E"]
 
-    /**
-     * Finds all longest words in the sentence.
-     * @return A list of longest words in the sentence.
-     */
-    public List<String> findLongestWords() {
-        if (sentence == null || sentence.trim().isEmpty()) {
-            return new ArrayList<>();
-        }
-        
-        String[] words = sentence.split("\\s+");
-        List<String> longestWords = new ArrayList<>();
-        int maxLength = 0;
-
-        for (String word : words) {
-            if (word.length() > maxLength) {
-                maxLength = word.length();
-                longestWords.clear();
-                longestWords.add(word);
-            } else if (word.length() == maxLength) {
-                longestWords.add(word);
-            }
-        }
-        return longestWords;
+        // Test case 6: Empty string input
+        WordProcessor wp6 = new WordProcessor("");
+        System.out.println("Test 6 - Longest words: " + wp6.findLongestWords());  
+        // Expected Output: []
     }
 }
