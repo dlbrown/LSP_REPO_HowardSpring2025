@@ -1,7 +1,7 @@
 package org.howard.edu.lsp.midterm.question5;
 
 /**
- * Class representing a Movie.
+ * Class representing a Movie
  */
 class Movie implements Streamable {
     private String title;

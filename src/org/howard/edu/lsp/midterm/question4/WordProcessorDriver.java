@@ -1,5 +1,5 @@
 /**
- * Driver class to test the WordProcessor class.
+ * Driver class to test the WordProcessor class
  */
 package org.howard.edu.lsp.midterm.question4;
 

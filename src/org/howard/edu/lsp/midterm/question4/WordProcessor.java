@@ -9,7 +9,7 @@ public class WordProcessor {
         this.sentence = sentence;
     }
 /**
- * Finds longest words
+ * Finds longest words.
  * Reference: https://stackoverflow.com/questions/69998874/null-and-isempty-check-for-arraylists
  */
     public List<String> findLongestWords() {
@@ -17,7 +17,7 @@ public class WordProcessor {
             return new ArrayList<>();
         }
 /**
- * Looks at word length and finds the longest word
+ * Looks at word length and finds the longest word.
  * Reference: https://stackoverflow.com/questions/60219613/how-to-print-out-longest-word-in-string-without-using-arrays-and-only-loops-in-j
  */
         String[] words = sentence.split("\\s+");

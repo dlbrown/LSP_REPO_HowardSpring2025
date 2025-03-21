@@ -1,7 +1,7 @@
 package org.howard.edu.lsp.midterm.question5;
 
 /**
- * Class representing a Music track.
+ * Class representing a Music track
  */
 class Music implements Streamable {
     private String title;

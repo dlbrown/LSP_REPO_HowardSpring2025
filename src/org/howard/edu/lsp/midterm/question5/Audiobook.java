@@ -1,7 +1,7 @@
 package org.howard.edu.lsp.midterm.question5;
 
 /**
- * Class representing an Audiobook.
+ * Class representing an Audiobook
  */
 class Audiobook implements Streamable {
     private String title;

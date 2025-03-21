@@ -18,7 +18,8 @@ public class VotingMachine {
 
     /**
      * Adds a candidate 
-     * @param candidate The name of the candidate to be added.
+     * @param candidate The name of candidate. 
+     * Reference: https://codesignal.com/learn/courses/interview-practice-advanced-problem-solving-2/lessons/managing-a-voting-system-using-java
      */
     public void addCandidate(String candidate) {
         if (!votes.containsKey(candidate)) {
@@ -28,8 +29,9 @@ public class VotingMachine {
 
     /**
      * Casts a vote for a candidate
-     * @param candidate The name of the candidate 
+     * @param candidate The name candidate .
      * @return true if the vote was successfully cast, false if the candidate don't exist.
+     * Reference: https://codesignal.com/learn/courses/interview-practice-advanced-problem-solving-2/lessons/managing-a-voting-system-using-java
      */
     public boolean castVote(String candidate) {
         if (votes.containsKey(candidate)) {
@@ -41,7 +43,8 @@ public class VotingMachine {
 
     /**
      * winner calculator - highest vote count wins
-     * @return The name of the winning candidate.
+     * @return The name of winner
+     * Reference: https://stackoverflow.com/questions/8689725/map-entry-how-to-use-it
      */
     public String getWinner() {
         String winner = null;

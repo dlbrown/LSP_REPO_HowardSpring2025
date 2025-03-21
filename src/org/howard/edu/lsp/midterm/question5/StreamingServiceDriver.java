@@ -1,5 +1,5 @@
 /**
- * Driver class to test the Streaming Service.
+ * Driver class to test the Streaming Service
  */
 package org.howard.edu.lsp.midterm.question5;
 
