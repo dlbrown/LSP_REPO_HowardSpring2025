@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Electronic voting machine.
+ * Electronic voting machine
  */
 public class VotingMachine {
     private Map<String, Integer> votes;
